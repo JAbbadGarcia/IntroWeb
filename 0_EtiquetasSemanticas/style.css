@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header y nav */
+header{
+    margin: 5px 100px;
+}
+.logo{
+    width: 300px;
+    height: 50px;
+}
+.navegador-principal{
+    background-color: #e0048c;
+    padding:20px  0px;
+    margin-bottom: 50px;
+}
+.opciones{
+    margin-right: 8px;
+    margin-left: 100px;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+}
+/*End Header */
+
+/*Main*/
+h2{
+    color: #2596be;
+    margin-bottom: 10px;
+}
+main{
+    margin: 0px 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px
+}
+main article{
+    width: 100%;
+    height: 300px;
+}
+article img{
+    width: 300px;
+    height: 200px;
+}
+article p{
+    width: 300px;
+    display: inline-block;
+    margin: 0px 40px;
+}
+article button{
+    width: 120px;
+    height: 30px;
+    background-color:  #2596be;
+    color: #fff;
+    border-style: none;
+}
+/*End main*/
+
+/*aside*/
+
+aside {
+    color: #2596be;
+    
+}
+aside h2{
+    margin-bottom: 10px;
+}
+aside li{
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+/*End aside*/
+footer{
+    background-color: #e0048c;
+    margin: 0 100px;
+}
+footer .Contenedor-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 80px;
+}
+.Contenedor-footer h3{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.Contenedor-footer a{
+    margin: 0px 10px;
+    text-align: right;
+}
+.Contenedor-footer p{
+    width: 300px;
+    margin: 0 auto;
+    color: #fff;
+}
+.derechos{
+    background-color: #b80474;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+}
