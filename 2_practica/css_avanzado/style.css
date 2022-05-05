@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Geostar+Fill&family=Press+Start+2P&display=swap');
+h1{
+    font-family: 'Geostar Fill', cursive;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    color: brown;
+}
+h2{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+}
+p{
+    font-family: 'Press Start 2P', cursive;
+    text-align: justify;
+    font-size: 22px;
+    color: gray;
+    line-height: 30px;
+    
+}
+p span{
+    text-decoration: underline black;
+}
+div{
+    width: 600px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    padding: 20px 50px;
+    
+}
