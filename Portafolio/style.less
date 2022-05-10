@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS */
+.button-62 {
+  background: linear-gradient(to bottom right, #9a34ed, #d37bf1);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(113, 1, 169, 0.5), .125rem .125rem 1rem rgba(196, 0, 222, 0.5);
+}
+
+/**/
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url("img/bgPrinicipal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px 15px;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 30px;
+      padding: 30px 15px;
+      .neon {
+        font-size: 25px;
+        color: #fff;
+        text-shadow: 0 0 5px rgb(210, 210, 210), 0 0 5px rgb(210, 210, 210),
+          0 0 5px rgb(210, 210, 210), 0 0 5px #1455b7, 0 0 10px #1455b7;
+      }
+      .neon:hover {
+        font-size: 25px;
+        color: #fff;
+        text-shadow: 0 0 5px rgb(210, 210, 210), 0 0 10px rgb(210, 210, 210),
+          0 0 5px rgb(210, 210, 210), 0 0 5px #1455b7, 0 0 25px #1455b7;
+      }
+    }
+    .img-perfil{
+        width: 80%;
+        height: 250px;
+        margin: 0 auto;
+        img{
+            width: 100%;
+        }
+    }
+    .Welcome-message{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+  }
+}
+
+/*End mobile*/
+

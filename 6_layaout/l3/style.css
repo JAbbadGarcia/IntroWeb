@@ -1,0 +1,57 @@
+main{
+    width: 900px;
+    height: 300px;
+    padding: 15px;
+    background-color: rgb(150, 150, 150);
+    margin: 0 auto;
+    display: flex;
+}
+.left, .right{
+    width: 20%;
+    height: 100%;
+    background: yellow;
+}
+.center{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.up,.down {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.up{
+    margin-bottom: 10px;
+}
+.up div{
+    width: 30%;
+    height: 100%;
+}
+
+.orange-down{
+    width: 30%;
+    height: 100%;
+    background: orange;
+}
+.yellow-down{
+    width: 63.3%;
+    height: 100%;
+    background: yellow;
+}
+
+.green{
+    background: green;
+}
+.orange{
+    background: orange;
+}
+.blue{
+    background: blue;
+}
+.right{
+    background: pink;
+}

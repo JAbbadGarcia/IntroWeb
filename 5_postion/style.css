@@ -1,0 +1,14 @@
+.cuadro{
+    height: 80px;
+    width: 80px;
+}
+.rojo{
+    background: red;
+}
+.verde{
+    background: green;
+    position: absolute;
+}
+.amarillo{
+    background: yellow;
+}
