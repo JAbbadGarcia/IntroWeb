@@ -17,14 +17,6 @@
     display: flex;
     justify-content: center;
 }
-.container-2{
-    display: flex;
-    justify-content: center;
-}
-.container-3{
-    display: flex;
-    justify-content: center;
-}
 
 .pageCart .shop_cart .shopping_cart_box .body #ShopCartPagingDisplay .content_table .item-quantity input{
     width: 140px !important;

@@ -1,18 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-/* CSS */
+/* CSS BUTTONS */
 .button-62 {
   background: linear-gradient(to bottom right, #9a34ed, #d37bf1);
   border: 0;
   border-radius: 12px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 2.5;
@@ -20,7 +23,7 @@
   padding: 0 1rem;
   text-align: center;
   text-decoration: none;
-  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -28,20 +31,98 @@
 }
 
 .button-62:not([disabled]):focus {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+}
+.button-62:active{
+  transform: scale(1.1);
+  transition: (0.3s);
+}
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem rgba(113, 1, 169, 0.5),
+    0.125rem 0.125rem 1rem rgba(196, 0, 222, 0.5);
+}
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: rgb(119, 14, 112);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.button-62:not([disabled]):hover {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(113, 1, 169, 0.5), .125rem .125rem 1rem rgba(196, 0, 222, 0.5);
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.button-85:active{
+  transform: scale(1.1);
+  transition: (0.3s);
+}
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #8b4198;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 /**/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 490px) {
   body {
     background-image: url("img/bgPrinicipal.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    min-width: 340px;
     width: 100vw;
     height: 100vh;
     margin: 0px 15px;
@@ -52,6 +133,9 @@
       width: 100%;
       height: 30px;
       padding: 30px 15px;
+      position: fixed;
+      top: 0px;
+      background-color: #3214b716;
       .neon {
         font-size: 25px;
         color: #fff;
@@ -60,26 +144,91 @@
       }
       .neon:hover {
         font-size: 25px;
-        color: #fff;
+        color: #EEF3D2;
         text-shadow: 0 0 5px rgb(210, 210, 210), 0 0 10px rgb(210, 210, 210),
           0 0 5px rgb(210, 210, 210), 0 0 5px #1455b7, 0 0 25px #1455b7;
       }
     }
-    .img-perfil{
-        width: 80%;
-        height: 250px;
-        margin: 0 auto;
-        img{
-            width: 100%;
-        }
+    .img-perfil {
+      width: 250px;
+      height: 170px;
+      margin: 30px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 90%;
+      }
     }
-    .Welcome-message{
-        width: 80%;
-        margin: 0 auto;
-        text-align: center;
+    .Welcome-message {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+      color: #F2F2F2;
+      h2 {
+        font-size: 20px;
+        line-height: 40px;
+      }
+      p {
+        font-size: 22px;        
+        .neon {
+          animation: neonAnim 2s alternate-reverse infinite;
+          color: #d1e5ff;
+          line-height: 40px;
+        }
+        @keyframes neonAnim {
+          from {
+            text-shadow: 0 0 10px rgba(255, 0, 208, 0.7),
+              0 0 40px rgba(255, 0, 208, 0.7), 0 0 100px rgba(255, 0, 208, 0.7);
+          }
+          to {
+            text-shadow: 0 0 5px rgba(0, 123, 255, 0.7),
+              0 0 20px rgba(0, 123, 255, 0.7), 0 0 60px rgba(0, 123, 255, 0.7);
+          }
+        }
+      }
+    }
+    .social-media{
+      margin: 5px auto;
+      width: 60%;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img{
+        width: 40px;
+        height: 40px;
+        border-radius: 9px;
+      }
+      img:hover{
+        box-shadow: 10px 10px 10px 0px rgba(177, 76, 255, 0.746);
+        border-radius: 9px;
+        cursor: pointer;
+      }
+    }
+    .recent-project{
+      width: 50%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      button{
+        font-size: 16px;
+        width: 190px;
+        height: 50px;
+        margin-bottom: 15px;
+      }
+    }
+    .copyR{
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      padding: 5px;
+      color: #F2F2F2;
+      background-color: #3214b716;
+      text-align: justify;
     }
   }
 }
 
 /*End mobile*/
-
