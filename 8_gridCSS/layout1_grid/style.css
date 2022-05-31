@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 90%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 20% 50% 30%;
+    gap: 15px;
+    padding: 15px;
+    background: green;
+}
+.elemento{
+    padding: 20px;
+    border: 1px red solid;
+   text-align: center;
+    background: rgb(19, 109, 136);
+    
+}
+.header{
+   grid-column: 1/4;
+}
+.aside{
+    grid-row: 2/4;
+}
+
+.footer{
+    grid-column: 2/4;
+}
